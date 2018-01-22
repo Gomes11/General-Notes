@@ -6,12 +6,21 @@
 3) Shell works as any other scripting language such as python, tcl, ruby, etc, the major difference is that most of linux tools are written either in C or in shell, which makes it much easier to communicate with the operating system.
 
 ## Basic commands
-- *Printing*
+- ***Printing*** <br/>
+The most standard ways of printing content in shell:
+   * echo
+   * printf
+  
+- ***Setting Variables*** <br/>
+  There is no specific predicate in shell to set a variable, thus something like `'var="foo"'` or `'var=bar'` would work.
 
-- *Setting Variables*
+- ***Looping*** <br/>
+  The most simple way of looping through values in shell is using either a `for` or a `while` loop. Those work alike in any other language, as follows:
+  * `for ((var=0; var<5; var++)); do command done`
+  
+  * `for variable in command; do command done` 
+  
 
-- *Looping*
+- ***Input/Output*** <br/>
 
-- *Input/Output*
-
-- *Piping Commands*
+- ***Piping Commands*** <br/>
